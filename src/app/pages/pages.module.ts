@@ -6,7 +6,8 @@ import { PagesComponent } from './pages.component';
 import { SharedModule } from '../shared/shared.module';
 import { PAGES_ROUTES } from './pages-routes';
 
-
+// Componentes para formularios
+import { CardModule } from 'primeng-lts/card';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { PAGES_ROUTES } from './pages-routes';
   ],
   imports: [
     SharedModule,
-    PAGES_ROUTES
+    PAGES_ROUTES,
+    CardModule
   ]
 })
 export class PagesModule { }

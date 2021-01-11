@@ -3,7 +3,7 @@ body{
     margin: 0;
     font-size: 13px;
 }
-#lateral{
+/*#lateral{
     height: 100vh;
     position: fixed;
     margin-top: 50px;
@@ -26,16 +26,20 @@ body{
     margin: 0;
     padding: 0;
 }
-
-#principal{
-    margin-top: 50px;
-    margin-left: 250px;
-    padding: 2em;
+.row{
+    position: absolute;
 }
-
+.principal{
+    padding-left: 20em;
+    padding-top: 4em;
+    padding-right: .5em;
+    padding-bottom: .5em;
+    width: 100vw;
+    position: relative;
+}*/
 
 /*VALORES PARA LAS COLUMNAS Y FILAS*/
-.col.perfil{
+/*.col.perfil{
     margin: 0 !important;
     padding: 0 !important;
 }
@@ -82,9 +86,9 @@ span{
     margin: 0;
     padding: 0;
     width: 100%;
-}
+}*/
 /*OPCIONES*/
-.opciones{
+/*.opciones{
     color: white !important;
     text-align: center;
     z-index: 20;
@@ -114,4 +118,13 @@ span{
     height: 200px;
     padding: 0 1em;
     color: white;
+}
+*/
+.container-principal{
+    position: relative;
+    height: 100vh;
+    display: block;
+    margin-left: 270px;
+    padding: 4em .2em .2em .2em;
+    z-index: 5;
 }
