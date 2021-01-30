@@ -16,7 +16,7 @@ import { DialogModule } from 'primeng-lts/dialog';
 import { InputTextModule } from 'primeng-lts/inputtext';
 import { PanelModule } from 'primeng-lts/panel';
 import { InputTextareaModule } from 'primeng-lts/inputtextarea';
-
+import { RolService } from '../services/rol.service';
 @NgModule({
   declarations: [
     PagesComponent,
@@ -42,6 +42,9 @@ import { InputTextareaModule } from 'primeng-lts/inputtextarea';
     InputTextModule,
     PanelModule,
     InputTextareaModule
+  ],
+  providers: [
+    RolService
   ]
 })
 export class PagesModule { }
