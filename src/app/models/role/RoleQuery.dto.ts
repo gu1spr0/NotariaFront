@@ -1,4 +1,4 @@
-export class RoleQueryDto {
+export class RoleQuery {
   id: number;
   rol: string;
   estado: string;

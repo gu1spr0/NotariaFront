@@ -2,7 +2,7 @@ import { Injectable } from "@angular/core";
 import { HttpClient } from "@angular/common/http";
 import { ConfiguracionService } from "./configuracion.service";
 import { Observable } from "rxjs";
-import { RoleQueryDto } from "../models/role/RoleQueryDto.dto";
+import { RoleQuery } from "../models/role/RoleQuery.dto";
 
 @Injectable({
   providedIn: "root",
@@ -17,6 +17,6 @@ export class RolService {
     this.url = configuracion.ServerWithApiUrl;
   }
   getRolesTodos(): Observable<any> {
-    return this.http.get<RoleQueryDto[]>(this.url + "role");
+    return this.http.get<RoleQuery[]>(this.url + "role");
   }
 }
