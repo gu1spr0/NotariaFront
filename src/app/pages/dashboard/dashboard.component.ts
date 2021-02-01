@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { RoleQueryDto } from '../../models/role/RoleQueryDto.dto';
+import { RoleQuery } from '../../models/role/RoleQuery.dto';
 import { RolService } from '../../services/rol.service';
 import { FilterUtils, MessageService } from 'primeng-lts/api';
 import { FormBuilder, FormGroup } from '@angular/forms';
@@ -10,7 +10,7 @@ import { FormBuilder, FormGroup } from '@angular/forms';
   styleUrls: ['./dashboard.component.css']
 })
 export class DashboardComponent implements OnInit {
-  vRoleQueryDto: RoleQueryDto;
+  vRoleQueryDto: RoleQuery;
   vOperacion = true;
   vSelectedElement = false;
   vDisplayDialog = false;
