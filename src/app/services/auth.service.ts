@@ -32,4 +32,17 @@ export class AuthService {
     localStorage.removeItem('token');
     this.router.navigate(['/login']);
   }
+  isLoggedIn() {
+    const token = localStorage.getItem('token');
+    if (!token) {
+      return false;
+    }
+  }
+  getCurrentUser() {
+    const token = localStorage.getItem('token');
+    if (!token) {
+      return null;
+    }
+    return new Jw
+  }
 }
