@@ -43,6 +43,5 @@ export class AuthService {
     if (!token) {
       return null;
     }
-    return new Jw
   }
 }
