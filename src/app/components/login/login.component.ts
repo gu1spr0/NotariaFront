@@ -13,9 +13,9 @@ export class LoginComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    this.vLoginForm = this.fb.group({
+    /*this.vLoginForm = this.fb.group({
       usuario: new FormControl('', Validators.required)
-    });
+    });*/
   }
   onSubmit(value: any) {
     if (this.vLoginForm.valid) {
