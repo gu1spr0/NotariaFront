@@ -1,34 +1,15 @@
-.login-register {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    height: 100%;
-    width: 100%;
-    padding: 10% 0;
-    position: fixed;
-}
-.login-box {
-    width: 400px;
-    margin: 0 auto;
-}
-.login-box .footer {
-    width: 100%;
-    left: 0px;
-    right: 0px;
-}
-.login-box .social {
+.contenedor{
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
     display: block;
-    margin-bottom: 30px;
+    background-color: #f7f7f7;
 }
-#recoverform {
-    display: none;
+.login-form{
+    width: 340px;
+    height: 380px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+    display: inline-block;
+    margin-top: 25vh;
 }
-.login-sidebar {
-    padding: 0px;
-    margin-top: 0px;
-}
-.login-sidebar .login-box {
-    right: 0px;
-    position: absolute;
-    height: 100%;
-}
+

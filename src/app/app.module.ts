@@ -8,8 +8,10 @@ import { PagesModule } from './pages/pages.module';
 import { HttpClientModule } from '@angular/common/http';
 import { MessagesModule } from 'primeng-lts/messages';
 import { MessageModule } from 'primeng-lts/message';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, FormControl } from '@angular/forms';
 import { MessageService } from 'primeng-lts/api';
+import { CardModule } from 'primeng-lts/card';
+import { ReactiveFormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,6 +19,8 @@ import { MessageService } from 'primeng-lts/api';
     RegisterComponent
   ],
   imports: [
+    ReactiveFormsModule,
+    CardModule,
     BrowserModule,
     APP_ROUTES,
     PagesModule,

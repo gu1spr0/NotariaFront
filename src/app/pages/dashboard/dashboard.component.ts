@@ -46,7 +46,7 @@ export class DashboardComponent implements OnInit {
         this.vRoleQueryDto = res;
       },
       error => {
-        const vErrorMessage = error;
+        console.log(JSON.stringify(error.error.message));
       }
     );
   }
