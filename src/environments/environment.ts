@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  apiUrl: 'http://localhost:9070/api/',
+  apiUrl: 'http://www.notaria10.not:9070/api/',
 };
 
 /*
