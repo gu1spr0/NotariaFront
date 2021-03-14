@@ -10,7 +10,7 @@ import { FormBuilder, FormGroup } from '@angular/forms';
   styleUrls: ['./dashboard.component.css']
 })
 export class DashboardComponent implements OnInit {
-  vRoleQueryDto: RoleQuery;
+  vRoleQueryDtoList: RoleQuery[];
   vOperacion = true;
   vSelectedElement = false;
   vDisplayDialog = false;
@@ -43,7 +43,8 @@ export class DashboardComponent implements OnInit {
   private allRoles() {
     this.roleService.getAllRoles().subscribe(
       res => {
-        this.vRoleQueryDto = res;
+        this.vRoleQueryDtoList = res;
+        console.log(this.vRoleQueryDtoList);
       },
       error => {
         console.log(JSON.stringify(error.error.message));

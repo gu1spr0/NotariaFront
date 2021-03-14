@@ -18,11 +18,11 @@ export class RolService {
     this.url = configuracion.ServerWithApiUrl;
   }
   getAllRoles(): Observable<any> {
-    return this.http.get<RoleQuery[]>('/api/roles', {
+    return this.http.get<RoleQuery[]>(this.configuracion.ServerWithApiUrl + '/roles', {
       params: {
-        state: Constants.STATE_ACTIVE
-      },
-      observe: 'response'
+        state: Constants.STATE_ACTIVE,
+
+      }
     });
   }
 }
